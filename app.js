@@ -1,5 +1,5 @@
 //Puppy Calculator
-function calculateDogAge(age) {
+function calculateDogAge(humanYears) {
     var humanYears=document.getElementById("solution").value;
     var dogYears = 7*humanYears;
     console.log("Your doggie is " + dogYears + " years old in dog years!");
