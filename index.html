@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>    
     <title>Puppy Calculator</title>
-    <h1 class="page-header"> The Puppy Age calculator</h1>
-    <p>You know how old your dog is in human years, but what about dog years?
-    Calculate it!</p>
-    <ul>
-        <li>Write a function named <code> calculateDogAge</code> that:
-        <li>takes 1 argument: your puppy's age.
-        <li>calculates your dog's age based on the conversion rate of 1 human year to 7 dog years.
-        <li>outputs the result to the screen like so: ""
-        </ul>   
-        <li>Call the function three times with different sets of values.
-        <li>Bonus: Add an additional argument to the function that takes the conversion rate of human to dog years.   
-    </ul>
+    <body>
+    <div class="bg">
+    <div class="flex-container">
+    <div>
+    <h1 class="animate__animated animate__bounce"> The Puppy Age calculator</h1>
+    <p>You know how old your dog is in human years,
+    <br>
+    but what about dog years?
+    <br>
+    The easy way to calculate a dog’s age is to
+    <br>
+    take 1 dog year and multiple it by 7 years.
+    <br>
+    This is based on an assumption that dogs 
+    <br>
+    live to about 10 and humans live
+    <br>
+    to about 70, on average.
+    </div>
+
+    <div></div>
+    <div>
+   </p>
+    <div id="message1"></div>   
     <br>      
     <input type="number" id="solution" placeholder="Enter a dog age" required/> 
    
     <button onclick="calculateDogAge()" class="calculate">Calculate!</button>
     <h3 id="solution1"></h3>
-    <script src="app.js"></script>  
-</head>
-<body>
-    
+
+    <script src="app.js"></script> 
+ </div> 
+</div>
+</div>
+
+  
 </body>
 </html>

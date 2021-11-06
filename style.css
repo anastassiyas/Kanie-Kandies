@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    /*The image used*/
+    background-image: url("images/labrador.jpg");
+    /*Full height*/
+    height: 100%;
+/*center and scale the image*/
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1 {
+    color: orange;
+    line-height: 2;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-left: 5px;
+    font-size: 2rem;
+}
+
+
+  h1:hover {
+	color: blanchedalmond;
+} 
+p {
+    color: blanchedalmond;
+    border-color: coral;
+    border-radius: 1px;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.flex-container {
+    display: flex;
+    
+  }
+  
+  .flex-container > div {
+   
+    margin: 30px;
+    padding: 65px;
+    
+  }
