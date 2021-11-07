@@ -13,7 +13,20 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 h1 {
-    color: orange;
+    color: red;
+    line-height: 2;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 2rem;
+}
+
+
+h1:hover {
+	color: blanchedalmond;
+} 
+h3 {
+    color: red;
     line-height: 2;
     margin-bottom: 25px;
     margin-top: 30px;
@@ -22,7 +35,7 @@ h1 {
 }
 
 
-  h1:hover {
+h3:hover {
 	color: blanchedalmond;
 } 
 p {
@@ -35,12 +48,30 @@ p {
 }
 .flex-container {
     display: flex;
-    
+    gap: 150px;
+       
   }
   
   .flex-container > div {
-   
     margin: 30px;
-    padding: 65px;
+    padding: 10px 19px 90px 20px;
+}
+.flexbox-item { 
+  width: 200px;
+  background-color: rgba(255, 235, 205, 0.103);
+  
+  margin: 120px;
+  padding: 40px;
+  border: 20px solid blanchedalmond  ;
     
-  }
+    border-image: url("images/bones\ \(2\).png")
+    533 /                    /* slice */
+    48px 48px 48px 48px /    /* width */
+    24px 24px 24px 24px       /* outset */
+    round;                  /* repeat */
+}
+      
+               
+ 
+
+  

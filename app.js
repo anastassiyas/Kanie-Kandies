@@ -11,7 +11,7 @@ function calculateDogAge(humanYears) {
     var humanYears = document.getElementById("solution").value;
     var dogYears = 7 * humanYears;
     console.log("Your doggie is " + dogYears + " years old in dog years!");
-    document.getElementById("solution1").innerHTML = "Your doggie is " + dogYears + " years old in dog years!";
+    document.getElementById("solution1").innerHTML = "Your doggie is " + dogYears + " years old </br> in dog years!";
 }
 
 calculateDogAge(1);
@@ -62,6 +62,38 @@ function special() {
 }
 console.log(`You got a` + special());
 element.innerHTML=`Check out the Special today 👀` + `</br>` + special();
+
+function calcOrder() {
+var orderForm = document.forms.orderForm;
+//Calculate initial cost of the order
+var mIndex = orderForm.elements.model.selectedIndex;
+var mCost = orderForm.elements.model.options[mIndex].value;
+var qIndex = orderForm.elements.qty.selectedIndex;
+var quantity = orderForm.elements.qty[qIndex].value;
+}
+//Initial cost = model cost x quantity
+
+var initialCost = mCost*quantity;
+orderForm.elements.initialCost.value = formatUSCurrency(initialCost);
+
+//Retrive the cost of the User`s protection plan
+var pCost = document.querySelector(`input [name="protection"]:checked`).value * quantity;
+orderForm.elements.protectionCost.value = formatNumber(pCost,2);
+//Calculate the order subtotal
+orderForm.elements.subtotal.value = formatNumber(initialCost + pCost,2);
+
+//Calculate the sales tax
+var salesTax  = 0.05*(initialCost + pCost);
+orderForm.elements.salesTax.value = formatNumber(salesTax, 2);
+
+//calculate the cost of the total order
+var totalCost = initialCost + pCost + salesTax;
+orderForm.elements.totalCost.value = formatUSCurrency(totalCost);
+
+
+
+
+
 
 function assignGrade(score) {
   if (score > 90) {
