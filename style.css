@@ -3,8 +3,8 @@ body, html {
     margin: 0;
 }
 .bg {
-    /*The image used*/
-    background-image: url("images/labrador.jpg");
+/*The image used*/
+background-image: url("images/labrador.jpg");
     /*Full height*/
     height: 100%;
 /*center and scale the image*/
@@ -34,35 +34,50 @@ h3 {
     font-size: 2rem;
 }
 
-
 h3:hover {
 	color: blanchedalmond;
 } 
 p {
     color: blanchedalmond;
-    border-color: coral;
-    border-radius: 1px;
-    margin-left: 5px;
+    margin-left: 15px;
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: match-parent;
 }
 .flex-container {
     display: flex;
-    gap: 150px;
-       
-  }
-  
-  .flex-container > div {
-    margin: 30px;
-    padding: 10px 19px 90px 20px;
+    flex-direction: row;
+flex-wrap: wrap;
+
+row-gap: 30px;
 }
-.flexbox-item { 
-  width: 200px;
-  background-color: rgba(255, 235, 205, 0.103);
+       
   
-  margin: 120px;
-  padding: 40px;
-  border: 20px solid blanchedalmond  ;
+  
+.flex-container > div {
+margin: 30px;
+padding: 0px 0px 200px 0px;
+
+}
+.flexone {
+flex-grow: 2;
+flex-shrink: 0;
+}
+
+.flextwo {
+width: 2em;
+
+}
+.flexthree {
+    flex: 1;
+    width: 200px;    
+       
+    
+   
+
+background-color: rgba(255, 235, 205, 0.103);
+margin: 100px;
+padding: 40px;
+border: 20px solid blanchedalmond  ;
     
     border-image: url("images/bones\ \(2\).png")
     533 /                    /* slice */
@@ -70,7 +85,13 @@ p {
     24px 24px 24px 24px       /* outset */
     round;                  /* repeat */
 }
-      
+
+    
+    
+    
+    
+    
+    
                
  
 
