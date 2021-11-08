@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+    <meta name="robots" content="noindex,follow" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    
+</head>
+<body>
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping Cart
+        </div>
+   
+        <!-- Item #1 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+   
+          <div class="image">
+            <img src="item-1.png" alt="" />
+          </div>
+   
+          <div class="description">
+            <span>Sample pack</span>
+            
+          </div>
+   
+          <div class="quantity">
+              
+            <button class="minus-btn" type="button" name="button">
+                <img src="images/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="images/plus.svg" alt="" />
+              </button>
+            
+            </button>
+          </div>
+   
+          <div class="total-price">$15.99</div>
+        </div>
+   
+        <!-- Item #2 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+   
+          <div class="image">
+            <img src="item-2.png" alt=""/>
+          </div>
+   
+          <div class="description">
+            <span>Meat treats</span>
+            
+          </div>
+   
+          <div class="quantity">
+            <button class="minus-btn" type="button" name="button">
+                <img src="images/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="images/plus.svg" alt="" />
+            </button>
+          </div>
+   
+          <div class="total-price">$12.99</div>
+        </div>
+   
+        <!-- Item #3 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+   
+          <div class="image">
+            <img src="item-3.png" alt="" />
+          </div>
+   
+          <div class="description">
+            <span>Clean breath cbd</span>
+            
+          </div>
+   
+          <div class="quantity">
+            <button class="minus-btn" type="button" name="button">
+                <img src="images/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="images/plus.svg" alt="" />
+            </button>
+          </div>
+   
+          <div class="total-price">$4.99</div>
+        </div>
+        <!-- Item #4 -->
+        <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-1.png" alt="" />
+            </div>
+     
+            <div class="description">
+              <span>Healthy teeth</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+                              </button>
+            </div>
+     
+            <div class="total-price">$4.99</div>
+          </div>
+     
+          <!-- Item #5 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-2.png" alt=""/>
+            </div>
+     
+            <div class="description">
+              <span>Bark control cbd</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+              </button>
+            </div>
+     
+            <div class="total-price">$15.97</div>
+          </div>
+     
+          <!-- Item #6 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-3.png" alt="" />
+            </div>
+     
+            <div class="description">
+              <span>Gummies</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+              </button>
+            </div>
+     
+            <div class="total-price">$2.99</div>
+          </div>
+          <!-- Item #7 -->
+        <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-1.png" alt="" />
+            </div>
+     
+            <div class="description">
+              <span>Pet tealeaf</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+            </div>
+     
+            <div class="total-price">$12.99</div>
+          </div>
+     
+          <!-- Item #8 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-2.png" alt=""/>
+            </div>
+     
+            <div class="description">
+              <span>Cbd for anxiety</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+              </button>
+            </div>
+     
+            <div class="total-price">$12.99</div>
+          </div>
+     
+          <!-- Item #9 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-3.png" alt="" />
+            </div>
+     
+            <div class="description">
+              <span>Cbd meat treats</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+              </button>
+            </div>
+     
+            <div class="total-price">$7.99</div>
+          </div>
+          <!-- Item #10 -->
+        <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-1.png" alt="" />
+            </div>
+     
+            <div class="description">
+              <span>Shower gel</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+              </button>
+            </div>
+     
+            <div class="total-price">$10.99</div>
+          </div>
+     
+          <!-- Item #11 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-2.png" alt=""/>
+            </div>
+     
+            <div class="description">
+              <span>ReLeaf edibles</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+              </button>
+            </div>
+     
+            <div class="total-price">$15.99</div>
+          </div>
+     
+          <!-- Item #12 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-3.png" alt="" />
+            </div>
+     
+            <div class="description">
+              <span>Alternative itch</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+              </button>
+            </div>
+     
+            <div class="total-price">$5.99</div>
+          </div>
+          <!-- Item #13 -->
+        <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-1.png" alt="" />
+            </div>
+     
+            <div class="description">
+              <span>PB treats</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+              </button>
+            </div>
+     
+            <div class="total-price">$4.99</div>
+          </div>
+     
+          <!-- Item #14 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-2.png" alt=""/>
+            </div>
+     
+            <div class="description">
+              <span>Broad spectrum</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+              </button>
+            </div>
+     
+            <div class="total-price">$17.99</div>
+          </div>
+     
+          <!-- Item #15 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+     
+            <div class="image">
+              <img src="item-3.png" alt="" />
+            </div>
+     
+            <div class="description">
+              <span>Hemp calming</span>
+              
+            </div>
+     
+            <div class="quantity">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="images/minus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="images/plus.svg" alt="" />
+              </button>
+            </div>
+     
+            <div class="total-price">$4.99</div>
+          </div>
+          <script src="cart.js"></script>      
+      </div>
+
+<script>
+
+</script>
+     
+</body>
+</html>
