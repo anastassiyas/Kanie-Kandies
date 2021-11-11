@@ -64,29 +64,79 @@ function special() {
 console.log(`You got a` + special());
 element.innerHTML=`Check out the Special today 👀` + `</br>` + special();
 
-function calcOrder() {
-var orderForm = document.forms.orderForm;
-//Calculate the initial cost of the order
-var mIndex = orderForm.elements.model.selectedIndex;
-var mCost = orderForm.elements.model.options[mIndex].value;
-var qIndex = orderForm.elements.qty.selectedIndex;
-var quantity = orderForm.elements.qty[qIndex].value;
+let day;
+switch (new Date().getDay()) {
+    case 0:
+      day = "Brunch and free samples";
+      break;
+    case 1:
+      day = "1/2 off all oilsy";
+      break;
+    case 2:
+       day = "2-for-1 Buy-one-Get-one Free day";
+      break;
+    case 3:
+      day = "Buy-one-Get-one Free day";
+      break;
+    case 4:
+      day = "Add a gummy";
+      break;
+    case 5:
+      day = "Bring a friend get a extra treat";
+      break;
+    case 6:
+      day = "Buy two edibles get one free";
+  }
+  document.getElementById("message1").innerHTML = (`Today is ${day}`);
+  console.log("Today is " + day);
+
+
+//Array Literal
+//WE assign to Array to a variable
+//JS Keyword build-in JAvascript methods new Array()
+//JS constructor method
+//create an array of at least 7 of your classmate`s name
+//Access an Array
+//const colors=[`brown`, `pink`,`blue`, `teal`, `red`]
+//const myAges=[10, 13, 16, 18, 21]
+//const compNums=[12>12, 9===`nine`, 1==2, `eight`===`EIGHT`, 5>=5]
+
+
+//var colors= new Array(`brown`,`pink`,`blue`,`teal`,`red`)
+//var myAges= new Array(10, 13, 16, 18, 21)
+
+
+//const colors= [];
+//colors[0]=`brown`;
+//colors[1]=`pink`;
+//colors[2]=`teal`;
+//colors[3]=`red`;
+//colors[4]=`blue`;
+
+
+var classmates=[`Shelby`, `Sebastian`, `Anna`, `April`, `Aaron`, `Lucas`, `Luz`, `Ali`]
+
+console.log(classmates);
+
+//loop over an array //for loop
+for(let i = 0; i < classmates.length; i++){
+    console.log(classmates);
 }
-//Initial cost = model cost x quantity
-var initialCost = (mCost)*quantity;
-orderForm.elements.initialCost.value = formatUSCurrency(initialCost);
+
+//Array methods
+classmates.push()
+classmates.pop();//`pop` removes last item from array
+classmates.unshift(`Ali`); //adds an item to the begginning of an array
+classmates.shift();//removes an item from the top of an array
+classmates.splice(2, 1, `Ali`);//
+
+console.log(classmates.indexOf(5));
 
 
 
-//Calculate the sales tax
-var salesTax  = 0.05*(initialCost + pCost);
-orderForm.elements.salesTax.value = formatNumber(salesTax, 2);
-
-//calculate the cost of the total order
-var totalCost = initialCost + pCost + salesTax;
-orderForm.elements.totalCost.value = formatUSCurrency(totalCost);
 
 
+console.log(classmates);
 
 
 
