@@ -55,6 +55,7 @@ p {
     
     text-align: match-parent;
 }
+
 .flex-container {
     display: flex;
     flex-direction: row;
