@@ -37,7 +37,7 @@ for (var i = 0; i <= 20; i++) {
 }
 const today = new Date();
 console.log(today);
-//returns the currrent day in number form
+//returns the current day in number form
 const dayNumber = today.getDay();
 //storing my output location
 console.log(dayNumber);
@@ -95,8 +95,7 @@ element.innerHTML=`Check out the Special today 👀` + `</br>` + special();
       "images/cbd.png",
       "images/cbd1.png",
 
-
-  ]
+ ]
   counter = 0
 
   function setImage () {
@@ -108,6 +107,8 @@ document.getElementById("carousel-cbd").src = arrayCarousel[counter];
 counter = (counter+1) % arrayCarousel.length;
 }
 setInterval(setImage, 2000);
+
+
 
 
 
