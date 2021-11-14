@@ -111,69 +111,6 @@ setInterval(setImage, 2000);
 
 
 
-//Array Literal
-//WE assign to Array to a variable
-//JS Keyword build-in JAvascript methods new Array()
-//JS constructor method
-//create an array of at least 7 of your classmate`s name
-//Access an Array
-//const colors=[`brown`, `pink`,`blue`, `teal`, `red`]
-//const myAges=[10, 13, 16, 18, 21]
-//const compNums=[12>12, 9===`nine`, 1==2, `eight`===`EIGHT`, 5>=5]
-
-
-//var colors= new Array(`brown`,`pink`,`blue`,`teal`,`red`)
-//var myAges= new Array(10, 13, 16, 18, 21)
-
-
-//const colors= [];
-//colors[0]=`brown`;
-//colors[1]=`pink`;
-//colors[2]=`teal`;
-//colors[3]=`red`;
-//colors[4]=`blue`;
-
-
-var classmates=[`Shelby`, `Sebastian`, `Anna`, `April`, `Aaron`, `Lucas`, `Luz`, `Ali`]
-
-console.log(classmates);
-
-//loop over an array //for loop
-for(let i = 0; i < classmates.length; i++){
-    console.log(classmates);
-}
-
-//Array methods
-classmates.push()
-classmates.pop();//`pop` removes last item from array
-classmates.unshift(`Ali`); //adds an item to the begginning of an array
-classmates.shift();//removes an item from the top of an array
-classmates.splice(2, 1, `Ali`);//
-
-console.log(classmates.indexOf(5));
 
 
 
-
-
-console.log(classmates);
-
-
-
-
-function assignGrade(score) {
-  if (score > 90) {
-    return `A`;
-} else if (score > 80 && score <90) {
-    return `B`;
-} else if (score > 70 && score <80) {
-    return `C`;
-} else if (score > 60 && score <70) {
-    return `D`;
-} else {
-    return `F`;
-}
-}
-console.log(` You got a ` + assignGrade(95));
-console.log(` You got a ` + assignGrade(68));
-console.log(` You got a ` + assignGrade(22));
