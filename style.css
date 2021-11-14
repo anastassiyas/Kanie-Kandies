@@ -60,6 +60,9 @@ p {
   position: relative;
   background: rgba(34,34,34,.2);
 }
+.menu-main li:hover .submenu {
+    display: block;
+}
 .menu-main {
   list-style: none;
   margin: 0;
@@ -96,6 +99,7 @@ p {
   padding-top: 90px;
   text-align: center;
 }
+
 .navbar-logo {
   position: absolute;
   left: 50%;
@@ -117,6 +121,7 @@ p {
 }
 
 .submenu {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -127,18 +132,14 @@ p {
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
-  .ul {
-    background: #ECDAD6;
-  }
-  .ul a {
-    color: #695753;
-  }
-  .submenu {
-    display: none;
-    background: #b19891;
-  }
+ 
+  
   .ul li:hover .submenu {
     display: block;
+  }
+  .submenu li a {
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    color: white;
   }
 
 .flex-container {
