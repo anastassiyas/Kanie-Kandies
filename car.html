@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="car.css">
+    <title>Car</title>
+    <style>
+        .flex-container {
+          display: flex;
+          background-color: DodgerBlue;
+        }
+        
+        .flex-container > div {
+          background-color: #f1f1f1;
+          margin: 10px;
+          padding: 20px;
+          font-size: 30px;
+        }
+        </style>
+</head>
+<body>
+<h1>Carvana</h1>
+<div class="flexbox-container">
+    <div class="flexbox-item flexone">
+    <div id="qiuz"></div>
+    <img src="images/Rover.jpg"  alt="range rover">
+    <br>
+    <button onclick="display()" id="submit">See details</button>
+    <button onclick="clear()" id="clear">Clear selection</button>
+    <div id="score"></div>
+    </div>
+    <div class="flexbox-item flextwo">
+        <div id="qiuz"></div>
+        <img src="images/porsche.jpg"  alt="porsche">
+        <br>
+        <button onclick="display()" id="submit">See details</button>
+        <button onclick="clear()" id="clear">Clear selection</button>
+        <div id="score"></div>
+        </div>
+        <div class="flexbox-item flexone">
+            <div id="qiuz"></div>
+            <img src="images/mercedes.jpg"  alt="mercedes">
+            <br>
+            <button onclick="display()" id="submit">See details</button>
+            <button onclick="clear()" id="clear">Clear selection</button>
+            <div id="score"></div>
+            </div>
+
+<script src="car.js"></script>   
+</body>
+</html>
