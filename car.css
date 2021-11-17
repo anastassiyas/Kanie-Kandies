@@ -1,3 +1,33 @@
 body {
-    background-color: chartreuse;
+    background-color: rgb(175, 247, 247);
 }
+h1 {
+    color: rgb(43, 226, 171);
+    text-align: center;
+    }
+.flexbox-container {
+    display: flex;
+    margin-left:5%;
+    flex-wrap: wrap;
+    }
+    img {
+    border: rgb(43, 226, 171) solid 5px
+}
+    .flexbox-item { 
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    
+    }
+    
+    .flexone {
+    flex-shrink: 0;
+    }
+    
+    .flextwo {
+    
+    flex-shrink: 0;
+    }
+    
+    .flexthree {
+    flex-shrink: 0;    
+    }

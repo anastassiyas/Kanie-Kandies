@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,46 +9,49 @@
     <title>Car</title>
     <style>
         .flex-container {
-          display: flex;
-          background-color: DodgerBlue;
+            display: flex;
+            background-color: DodgerBlue;
         }
-        
-        .flex-container > div {
-          background-color: #f1f1f1;
-          margin: 10px;
-          padding: 20px;
-          font-size: 30px;
-        }
-        </style>
-</head>
-<body>
-<h1>Carvana</h1>
-<div class="flexbox-container">
-    <div class="flexbox-item flexone">
-    <div id="qiuz"></div>
-    <img src="images/Rover.jpg"  alt="range rover">
-    <br>
-    <button onclick="display()" id="submit">See details</button>
-    <button onclick="clear()" id="clear">Clear selection</button>
-    <div id="score"></div>
-    </div>
-    <div class="flexbox-item flextwo">
-        <div id="qiuz"></div>
-        <img src="images/porsche.jpg"  alt="porsche">
-        <br>
-        <button onclick="display()" id="submit">See details</button>
-        <button onclick="clear()" id="clear">Clear selection</button>
-        <div id="score"></div>
-        </div>
-        <div class="flexbox-item flexone">
-            <div id="qiuz"></div>
-            <img src="images/mercedes.jpg"  alt="mercedes">
-            <br>
-            <button onclick="display()" id="submit">See details</button>
-            <button onclick="clear()" id="clear">Clear selection</button>
-            <div id="score"></div>
-            </div>
 
-<script src="car.js"></script>   
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Carvana</h1>
+    <div class="flexbox-container">
+        <div class="flexbox-item flexone">
+            
+            <img src="images/Rover.jpg" alt="range rover" width="300" lenght="200">
+            <br>
+            <button onclick="display1()" id="submit1">See details</button>
+            <button onclick="clear1()" id="clear">Clear selection</button>
+            
+        </div>
+        <div class="flexbox-item flextwo">
+        <img src="images/porsche.jpg" alt="porsche" width="300" lenght="200">
+            <br>
+            <button onclick="display2()" id="submit2">See details</button>
+            <button onclick="clear2()" id="clear">Clear selection</button>
+           
+        </div>
+        <div class="flexbox-item flexthree">
+            
+            <img src="images/mercedes.jpg" alt="mercedes" width="300" lenght="200">
+            <br>
+            <button onclick="display3()" id="submit3">See details</button>
+            <button onclick="clear3()" id="clear">Clear selection</button>
+            
+        </div>
+    </div>
+
+
+    <script src="car.js"></script>
 </body>
+
 </html>
