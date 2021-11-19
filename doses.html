@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="doses.css">
     <title>CBD doses</title>
 </head>
 <body>
@@ -14,6 +14,59 @@
 <h3><strong>The basic dosing rule for cats and dogs: 1–5 mg CBD for every 10 pounds of body weight.</strong></h3>
 <p class="p1">How often should you give your dog or cat CBD? To control pain, give your dog or cat CBD every 8 hours or as needed. For other uses, give once or twice a day.</p>
 <p>&nbsp;</p>
+
+<div class="container">
+    <div class="flexbox-item one">
+        <!--Content Here-->
+        <img src="https://i.pinimg.com/564x/fa/41/ac/fa41ace1ab4cde11018a9b224e488806.jpg" alt="Pepper the dog">
+        <h2>Small dog</h2>
+       
+
+        <button onclick="display1()" id="submit1">See Details</button>
+        <button onclick="clear1()" id="clear">Clear Selection</button>
+       
+    </div>
+    <div class="flexbox-item two">
+        <!--Content Here-->
+        <img src="https://i.pinimg.com/originals/86/fe/06/86fe06e0abc24a79b640329955a834b1.jpg"
+            alt="Alaska the dog">
+        <h2>Medium dog</h2>
+        <button onclick="display2()" id="submit2">See Details</button>
+        <button onclick="clear2()" id="clear">Clear Selection</button>
+        <h2 class="Medium dog"></h2>
+        
+    </div>
+
+    <div class="flexbox-item three">
+        <!--Content Here-->
+        <img src="https://i.pinimg.com/474x/0d/1c/fd/0d1cfd6ec1bedb34c29a46a99474303c.jpg" alt="Rex the dog">
+        <h2>Large dog</h2>
+        <button onclick="display3()" id="submit3">See Details</button>
+        <button onclick="clear3()" id="clear">Clear Selection</button>
+        <h2 class="Large dog"></h2>
+        
+    </div>
+    <div class="flexbox-item four">
+        <!--Content Here-->
+        <img src="https://i.pinimg.com/474x/0d/1c/fd/0d1cfd6ec1bedb34c29a46a99474303c.jpg" alt="Rex the dog">
+        <h2>Giant dog</h2>
+        <button onclick="display4()" id="submit4">See Details</button>
+        <button onclick="clear4()" id="clear">Clear Selection</button>
+        <h2 class="Giant dog"></h2>
+        
+    </div>
+    <div class="flexbox-item five">
+        <!--Content Here-->
+        <img src="https://i.pinimg.com/474x/0d/1c/fd/0d1cfd6ec1bedb34c29a46a99474303c.jpg" alt="Rex the dog">
+        <h2>Cat</h2>
+        <button onclick="display5()" id="submit5">See Details</button>
+        <button onclick="clear5()" id="clear">Clear Selection</button>
+        <h2 class="Cat"></h2>
+        
+    </div>
+
+</div>
+
     <div id="myDynamicTable">
         <h2>CBD for dogs or cats dosing chart</h2>
 <table border="0" cellpadding="8">
@@ -86,10 +139,10 @@
 </tr>
 
 </table>
-
-    
-        
+         
     </div>
-    <script src="app.js"></script>    
+ <!-- Connect to JS -->
+ <script src="doses.js"></script>  
+
 </body>
 </html>

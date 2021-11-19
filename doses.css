@@ -1,0 +1,41 @@
+body {
+    background-image: url("https://static.nashvillewraps.com/images/sku/P807-XLARGE.jpg");
+    background-attachment: fixed;
+    font-family: 'Fredoka One', cursive
+}
+
+img {
+    height: 400px;
+    width:350px;
+    border: 1px black solid;
+   
+}
+
+.flexbox-item {
+   margin-left: 2.5%;
+   margin-right: 2.5%;
+}
+
+h2 {
+    text-align:center;
+    background-color:black;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    margin-left:5%;
+
+}
+
+button {
+    font-family: 'Fredoka One', cursive;
+    background-color:ghostwhite;
+    font-size: 15px;
+}
+
+#submit1, #submit2, #submit3, #submit4, #submit5{
+    margin-left:15%;
+}
