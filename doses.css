@@ -1,7 +1,7 @@
 body {
     background-image: url("images/pet-paw.jpg");
     background-attachment: fixed;
-    font-family: 'Cooper', cursive
+    font-family: 'Cooper', cursive;
 }
 
 img {
