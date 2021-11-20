@@ -1,39 +1,39 @@
 // Create a table with doses
 var smallDog = {	
-    name: "U+1F9F4 1/4 ml= 1.75 mg",
-    name1: "U+1F9F4 1/2 ml= 3.5 mg",
-    name2: "U+1F9F4 3/4 ml= 5.25 mg",
-    name3: "U+1F9F4 1 ml= 7 mg"
+    dose: "&#129524; 1/4 ml= 1.75 mg",
+    dose1: "&#129524; 1/2 ml= 3.5 mg",
+    dose2: "&#129524; 3/4 ml= 5.25 mg",
+    dose3: "&#129524; 1 ml= 7 mg"
 
 
 }
 var medDog =
 {
-    name: "U+1F9F4 1/4 ml= 4.25 mg",
-    name1: "U+1F9F4 1/2 ml= 8.5 mg",
-    name2: "U+1F9F4 3/4 ml= 12.75 mg",
-    name3: "U+1F9F4 1 ml= 17 mg"
+    dose: "&#129524; 1/4 ml= 4.25 mg",
+    dose1: "&#129524; 1/2 ml= 8.5 mg",
+    dose2: "&#129524; 3/4 ml= 12.75 mg",
+    dose3: "&#129524; 1 ml= 17 mg"
 }
 var largeDog = 
 {
-    dose: "U+1F9F4 1/4 ml= 6.75 mg",
-    dose1: "U+1F9F4 1/2 ml= 13.5 mg",
-    dose2: "U+1F9F4 3/4 ml= 20.25 mg",
-    dose3: "U+1F9F4 1 ml= 27 mg"
+    dose: "&#129524; 1/4 ml= 6.75 mg",
+    dose1: "&#129524; 1/2 ml= 13.5 mg",
+    dose2: "&#129524; 3/4 ml= 20.25 mg",
+    dose3: "&#129524; 1 ml= 27 mg"
 }
 var giantDog = 
 {
-    dose: "U+1F9F4 1/4 ml= 9.25 mg",
-    dose1: "U+1F9F4 1/2 ml= 18.5 mg",
-    dose2: "U+1F9F4 3/4 ml= 27.75 mg",
-    dose3: "U+1F9F4 1 ml= 37 mg"
+    dose: "&#129524; 1/4 ml= 9.25 mg",
+    dose1: "&#129524; 1/2 ml= 18.5 mg",
+    dose2: "&#129524; 3/4 ml= 27.75 mg",
+    dose3: "&#129524; 1 ml= 37 mg"
 }
 var cat = 
 {
-    dose: "U+1F9F4 1/4 ml= 1.75 mg",
-    dose1: "U+1F9F4 1/2 ml= 3.5 mg",
-    dose2: "U+1F9F4 3/4 ml= 5.25 mg",
-    dose3: "U+1F9F4 1 ml= 7 mg"   
+    dose: "&#129524; 1/4 ml= 1.75 mg",
+    dose1: "&#129524; 1/2 ml= 3.5 mg",
+    dose2: "&#129524; 3/4 ml= 5.25 mg",
+    dose3: "&#129524; 1 ml= 7 mg"   
 }
 
 //Shows Object Properties when button is clicked
@@ -75,7 +75,7 @@ place.innerHTML = "See Details";
 function display3() {
 var place = document.getElementById("submit3");
 for (value in largeDog) {
-    place.innerHTML = "75-100 lbs" + rex.name + "<br>" +
+    place.innerHTML = "75-100 lbs" + "<br>" +
     " " + largeDog.dose + "<br>" +
     " " + largeDog.dose1 + "<br>" +
     " " + largeDog.dose2 + "<br>" +
@@ -129,29 +129,29 @@ function display4() {
 
 //Create a table 
 
-function addTable() {
-    var myTableDiv = document.getElementById("myDynamicTable");
+// function addTable() {
+//     var myTableDiv = document.getElementById("myDynamicTable");
   
-    var table = document.createElement('TABLE');
-    table.border = '1';
+//     var table = document.createElement('TABLE');
+//     table.border = '1';
   
-    var tableBody = document.createElement('TBODY');
-    table.appendChild(tableBody);
+//     var tableBody = document.createElement('TBODY');
+//     table.appendChild(tableBody);
   
-    for (var i = 0; i < 3; i++) {
-      var tr = document.createElement('TR');
-      tableBody.appendChild(tr);
+//     for (var i = 0; i < 3; i++) {
+//       var tr = document.createElement('TR');
+//       tableBody.appendChild(tr);
   
-      for (var j = 0; j < 4; j++) {
-        var td = document.createElement('TD');
-        td.width = '75';
-        td.appendChild(document.createTextNode("Cell " + i + "," + j));
-        tr.appendChild(td);
-      }
-    }
-    myTableDiv.appendChild(table);
-  }
-  addTable();
+//       for (var j = 0; j < 4; j++) {
+//         var td = document.createElement('TD');
+//         td.width = '75';
+//         td.appendChild(document.createTextNode("Cell " + i + "," + j));
+//         tr.appendChild(td);
+//       }
+//     }
+//     myTableDiv.appendChild(table);
+//   }
+//   addTable();
 
 
 

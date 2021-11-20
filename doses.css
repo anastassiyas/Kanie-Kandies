@@ -1,7 +1,7 @@
 body {
-    background-image: url("https://static.nashvillewraps.com/images/sku/P807-XLARGE.jpg");
+    background-image: url("images/pet-paw.jpg");
     background-attachment: fixed;
-    font-family: 'Fredoka One', cursive
+    font-family: 'Cooper', cursive
 }
 
 img {
@@ -15,27 +15,61 @@ img {
    margin-left: 2.5%;
    margin-right: 2.5%;
 }
+h1 {
+    
+    color: rgb(73, 51, 35);
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    
+}
 
+h1:hover {
+	color: rgb(36, 149, 184);
+}
 h2 {
-    text-align:center;
-    background-color:black;
-    color:rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(196, 183, 181);
+    color:rgb(73, 51, 35);
     font-size: 30px;
+}
+h2:hover {
+	color: rgb(36, 149, 184);
+}
+
+
+h3 {
+    text-align: center;
+    color:rgb(73, 51, 35);
+    font-size: 20px;
+}
+h3:hover {
+	color: rgb(36, 149, 184);
 }
 
 .container {
     display:flex;
     flex-wrap: wrap;
-    margin-left:5%;
+    justify-content: space-evenly;
+   
 
 }
 
 button {
-    font-family: 'Fredoka One', cursive;
-    background-color:ghostwhite;
+    font-family: 'Cooper', cursive;
+    background-color:beige;
+    color:rgb(73, 51, 35);
     font-size: 15px;
+    
 }
 
+tbody {
+    
+    color:rgb(73, 51, 35);
+
+}
+
+    
 #submit1, #submit2, #submit3, #submit4, #submit5{
     margin-left:15%;
 }
