@@ -1,5 +1,5 @@
 body {
-    background-color: #f3f3f3;
+    background-color: rgba(219, 189, 150, 0.911);
 }
 form {
     max-width: 580px;
@@ -28,12 +28,12 @@ form {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 4px;
-    background-color: #3CBC8D;
+    background-color: rgb(36, 149, 184);;
     color: white;
   }
 
   input[type=button], input[type=submit], input[type=reset] {
-    background-color:  #3CBC8D;
+    background-color:  rgb(36, 149, 184);;
     border: none;
     color: white;
     padding: 16px 32px;
