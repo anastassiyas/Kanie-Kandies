@@ -12,7 +12,7 @@
     <div class="header">
         <div class="container flex-hdrtop">
             <div class="header-right">
-                <a class="signin-nav"><a tabindex="0" href="https://anastassiyas.github.io/Kanie-Kandies/forms.html"><i class="flaticon-arrows"></i>Sign In</a>
+                <a class="signin-nav"><a tabindex="0" href="https://anastassiyas.github.io/Kanie-Kandies/.html"><i class="flaticon-arrows"></i>Sign In</a>
                     <a class="cart-nav"><a tabindex="0" href="https://anastassiyas.github.io/Kanie-Kandies/cart.html"><i
                                 class="flaticon-commerce"></i><span class="cart-count" id="cartCount"><span
                                     id="cartDiv"></span></span><i class="fa fa-cart-plus" aria-hidden="true"> </i> Cart</a>
@@ -102,7 +102,45 @@
                 </div>
             </div>
         </div>
-        <footer>
+        
+            <form name="contactForm" onsubmit="return validateForm()" action="#" method="get">
+                <h2>Application Form</h2>
+                <br>
+                <div class="row">
+                    <label  style="color:rgb(36, 149, 184)">Full Name</label>
+                    <input type="text" name="name" placeholder="Full name*" required>
+                    <div class="error" id="nameErr"></div>
+                </div>
+                <br>
+                <div class="row">
+                    <label  style="color:rgb(36, 149, 184)">Email Address</label>
+                    <input type="text" name="email" min="12" placeholder="E-Mail*" required>
+                    <div class="error" id="emailErr">
+                        <span class="form__error">This field must contain E-Mail in the format example@site.com</span>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <label style="color:rgb(36, 149, 184)">Mobile Number</label>
+                    <input type="text" name="mobile" placeholder="123-456-7890"  minlength="10" maxlength="18"  required >
+                    <div class="error" id="mobileErr"></div>
+                </div>
+                <br>
+                <div class="row">
+                    <label  style="color:rgb(36, 149, 184)">Password</label>
+                    <input type="text" name="password" placeholder="at least 1 number, and 1 uppercase and lowercase" required >
+                    <div class="error" id="mobileErr"></div>
+                    <span class="form__error">This field must contain at least 1 number, and 1 uppercase and lowercase</span>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+           
+        </div>
+    </form>    
+            <hr> 
+            <footer>       
             <p style="text-align: center" style="font-size:12px">Stay connected:</p>
 
             
