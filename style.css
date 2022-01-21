@@ -273,11 +273,12 @@ body {
   width: 500px;
 } */
 form {
-  max-width: 580px;
+  max-width: 650px;
   margin: 50px auto;
   padding: 16px;
   border: 3px solid rgb(36, 149, 184);
-  justify-content: center;
+  border-radius: 4px;
+ 
     
 }
 
