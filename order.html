@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+   
+    <title>Order form for Kanie-Kandies</title>
+</head>
+  <header>
+    <div id="header">
+    <h1>WELCOME TO Kanie-Kandies</h1>
+    <h2>Please, select an item </h2>
+    </div>
+  </header>
+  <body>
+    
+        <form id="orderForm" name="orderForm" method="get" action="order.html">
+          
+         
+    <form id="form">
+        <caption>Product Order</caption>
+        
+           <td>
+      <br>
+      <label for="products">Products</label>
+      <select name="products" id="products">
+        <option value="select" selected>Select</option>  
+        <option value="15.99">Sample pack (15.99)</option>
+        <option value="12.99">Meat treats (12.99)</option>
+        <option value="4.99">Clean breath cbd (4.99)</option>
+        <option value="4.99">Healthy teeth (4.99)</option>
+        <option value="4.99">Bark control cbd (4.99)</option>
+        <option value="2.99">Gummies (2.99/each)</option>
+        <option value="12.99">Pet tealeaf (12.99)</option>
+        <option value="12.99">Cbd for anxiety (12.99)</option>
+        <option value="10.99">Shower gel (10.99)</option>
+        <option value="5.99">Alternative itch (5.99)</option>
+        <option value="4.99">PB treats(4.99)</option>
+        <option value="17.99">Broad spectrum (17.99)</option>
+        <option value="4.99">Hemp calming (4.99)</option>
+    </select>
+    <br>
+
+    <input type="text" name="initialCost" id="initialCost" size="10" readonly />
+    </td>
+    <br>
+        <td class="rightA">
+        <label for="qty">Qty</label>
+        <select name="qty" id="qty">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+    </select>
+<br>
+<tr>
+    <td colspan="2" class="rightA">Subtotal</td>
+    <td class="outcell">
+       <input type="text" name="subtotal" id="subtotal" size="10" readonly />
+    </td>
+ </tr>
+<br>
+ <tr>
+    <td colspan="2" class="rightA">Tax (5%)</td>
+    <td>
+       <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+    </td>
+ </tr>
+<br>
+ <tr>
+    <td colspan="2" class="rightA">TOTAL</td>
+    <td>
+       <input type="text" name="totalCost" id="totalCost" size="10" readonly />
+    </td>
+ </tr>
+</table>
+<br>
+<h2>Add items to your cart</h2>
+<input type="submit" id="buttonAdd" value="add to cart"/>
+
+</form>
+  
+ 
+      
+  
+  <script src="order.js"></script>
+</html>
+    
+</body>
+</html>

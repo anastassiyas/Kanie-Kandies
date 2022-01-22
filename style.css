@@ -318,7 +318,6 @@ input:checked {
 
 input[type=button], input[type=submit], input[type=reset], [type=text] {
   width: 50%;
-  
   margin: 8px 0;
   box-sizing: border-box;
   border-radius: 4px;
