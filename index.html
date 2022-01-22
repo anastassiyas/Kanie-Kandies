@@ -87,55 +87,49 @@
                         <br>
                         <button onclick="calculateDogAge()" class="calculate">Calculate!</button>
                         <h3 id="solution1"></h3>
+                  
                     </div>
-                    <div>
-                        </p>
-
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-
-                    
-                    <script src="app.js"></script>
                 </div>
             </div>
         </div>
         
-            <form name="contactForm" onsubmit="return validateForm()" action="#" method="get">
-                <h2>Application Form</h2>
-                <br>
-                <div class="row">
-                    <label  style="color:rgb(36, 149, 184)">Full Name</label>
-                    <input type="text" name="name" placeholder="Full name*" required>
+            <form name="contactForm" class="transparent" onsubmit="return validateForm()" action="#" method="get">
+                <h3>Application Form</h3>
+     
+            <div class="form-inner">
+               
+                    <label  for="username" style="color:rgb(36, 149, 184)">Full Name</label>
+                    <input type="text" name="username" placeholder="Full name*" required autocomplete="on">
                     <div class="error" id="nameErr"></div>
-                </div>
-                <br>
-                <div class="row">
+              
+               
+               
                     <label  style="color:rgb(36, 149, 184)">Email Address</label>
                     <input type="text" name="email" min="12" placeholder="E-Mail*" required>
-                    <div class="error" id="emailErr">
-                        <span class="form__error">This field must contain E-Mail in the format example@site.com</span>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
+                    <div class="error" id="emailErr"></div>
+
+                    <label for="password"  style="color:rgb(36, 149, 184)">Password</label>
+                    <input type="password" name="password" placeholder="at least 1 number, and 1 uppercase and lowercase" required >
+                    <div class="error" id="mobileErr"></div>
+            
+        
+               
                     <label style="color:rgb(36, 149, 184)">Mobile Number</label>
                     <input type="text" name="mobile" placeholder="123-456-7890"  minlength="10" maxlength="18"  required >
                     <div class="error" id="mobileErr"></div>
+               
+           
+                
+                  
+                   
+                   
                 </div>
-                <br>
-                <div class="row">
-                    <label  style="color:rgb(36, 149, 184)">Password</label>
-                    <input type="text" name="password" placeholder="at least 1 number, and 1 uppercase and lowercase" required >
-                    <div class="error" id="mobileErr"></div>
-                    <span class="form__error">This field must contain at least 1 number, and 1 uppercase and lowercase</span>
-                </div>
-                <br>
-                <div class="row">
+              
+                <div class="form-inner">
                     <input type="submit" value="Submit">
                 </div>
+                <br>
+                <br>
            
         </div>
     </form>    
@@ -154,6 +148,7 @@
             </div>
                  
 </footer>
+<script src="app.js"></script>
     </body>
 
 </html>
