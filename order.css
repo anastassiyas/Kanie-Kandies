@@ -1,48 +1,86 @@
-/* Order Table Styles */
-
-
- 
- form#orderForm input#buttonAdd {
-    display: block;
-    width: 120px;
-    height: 35px;
-    margin: 15px auto;
-    background-color: rgba(232, 218, 201, 0.8);
-    font-size: 1.3em;
-    border-radius: 20px;
- }
- table {
-    border-spacing: 0 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+/* .table_price {
+    border-collapse: collapse;
+    border-left: 3px solid #F79361;
+    border-right: 3px solid #F79361;
+    border-bottom: 3px solid #F79361;
+    font-family: "Lucida Grande", sans-serif;
     }
-    th {
-    padding: 10px 20px;
-    background: #56433D;
-    color: #F9C941;
-    border-right: 2px solid; 
-    font-size: 0.9em;
-    }
-    th:first-child {
-    text-align: left;
-    }
-    th:last-child {
-    border-right: none;
-    }
-    td {
-    vertical-align: middle;
+    .table_price caption {
+    background: #F79361;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     padding: 10px;
-    font-size: 14px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    color: white;
+    font-family: "Roboto Slab",serif;
+    font-style: normal;
+    font-size: 26px;
     text-align: center;
-    border-top: 2px solid #56433D;
-    border-bottom: 2px solid #56433D;
-    border-right: 2px solid #56433D;
+    margin: 0;
     }
-    td:first-child {
-    border-left: 2px solid #56433D;
-    border-right: none;
+    .table_price td, .table_price th {
+    padding: 10px;
     }
-    td:nth-child(2){
+    .table_price th {
     text-align: left;
+    font-size: 18px;
     }
- 
+    .table_price tr:nth-child(2n) {
+    background: #E5E5E5;
+    }
+    .table_price td:last-of-type {
+    text-align: center;
+    }
+    .table_price a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #F79361;
+    box-shadow: 2px 2px 0 0 #a22800;
+    position: relative;
+    }
+    .table_price a:hover {
+    box-shadow: none;
+    top: 2px;
+    left: 2px;
+    } */
+    * Basic styles to be used with all devices and under all conditions */
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+
+/* Set the default page element styles */
+
+body {
+   line-height: 1.2em;
+}
+
+ul, ol {
+   list-style: none;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}

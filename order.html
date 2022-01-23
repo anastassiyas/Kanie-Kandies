@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cart.css">
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-   
     <title>Order form for Kanie-Kandies</title>
 </head>
+<body>
+    <table class="table_price">
+      
+   
+
   <header>
     <div id="header">
     <h1>WELCOME TO Kanie-Kandies</h1>
@@ -22,11 +23,12 @@
     
         <form id="orderForm" name="orderForm" method="get" action="order.html">
           
-         
+            <table class="table_price">
+              
     <form id="form">
         <caption>Product Order</caption>
         
-           <td>
+    <td>
       <br>
       <label for="products">Products</label>
       <select name="products" id="products">
@@ -45,13 +47,9 @@
         <option value="17.99">Broad spectrum (17.99)</option>
         <option value="4.99">Hemp calming (4.99)</option>
     </select>
-    <br>
-
-    <input type="text" name="initialCost" id="initialCost" size="10" readonly />
-    </td>
-    <br>
-        <td class="rightA">
-        <label for="qty">Qty</label>
+    
+  
+        <td class="rightA"><label for="qty">Qty</label>
         <select name="qty" id="qty">
             <option value="1" selected>1</option>
             <option value="2">2</option>
@@ -63,7 +61,9 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
-    </select>
+   
+    <input type="text" name="initialCost" id="initialCost" size="10" readonly />
+</select>
 <br>
 <tr>
     <td colspan="2" class="rightA">Subtotal</td>

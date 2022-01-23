@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/icon dog.jpg"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon dog.jpg" />
 </head>
 <header class="navbar-fixed-top">
     <div class="header">
         <div class="container flex-hdrtop">
             <div class="header-right">
-                <a class="signin-nav"><a tabindex="0" href="https://anastassiyas.github.io/Kanie-Kandies/.html"><i class="flaticon-arrows"></i>Sign In</a>
+                <a class="signin-nav"><a tabindex="0" href="https://anastassiyas.github.io/Kanie-Kandies/.html"><i
+                            class="flaticon-arrows"></i>Sign In</a>
                     <a class="cart-nav"><a tabindex="0" href="https://anastassiyas.github.io/Kanie-Kandies/cart.html"><i
                                 class="flaticon-commerce"></i><span class="cart-count" id="cartCount"><span
-                                    id="cartDiv"></span></span><i class="fa fa-cart-plus" aria-hidden="true"> </i> Cart</a>
+                                    id="cartDiv"></span></span><i class="fa fa-cart-plus" aria-hidden="true"> </i>
+                            Cart</a>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -49,29 +51,24 @@
         <div class="bg">
             <div class="flex-container">
                 <div id="message1" class="flexbox-item flexone"></div>
-
-
-                <div class="flexbox-item flextwo">
-
-                </div>
+                <div class="flexbox-item flextwo"></div>
                 <div class="flexbox-item flexthree">
                     <section>
                         <img id="carousel-cbd" width="430" height="350">
                         <!--<img id = "carousel-cbd1">-->
                     </section>
 
-                <div class="wpb_wrapper">
-                    <h3><strong>If you’re looking for natural relief for your pet, try CBD</strong></h3>
-                    <p>Cannabidiol (CBD), one of the active constituents of the cannabis plant, can exert profound
-                    healing and balancing effects on all mammals. By stimulating the endocannabinoid system, CBD
-                    can help the body rebalance to homeostasis.</p>
-                    <p>Pet owners use CBD for a broad range of behavioral and medical issues, including
-                    cancer, pain, anxieties, obsessions, arthritis, seizures,
-                    neurological and digestive disorders, past traumas, social withdrawal, irritable moods, and
-                    getting along with other dogs and cats better.</p>
-                    <p>While recovering from illness or surgery, CBD can stimulate appetite and speed healing. At
-                    the end of life, CBD can minimize the pain and anxiety your pet may be experiencing.</p>
-
+                    <div class="wpb_wrapper">
+                        <h3><strong>If you’re looking for natural relief for your pet, try CBD</strong></h3>
+                        <p>Cannabidiol (CBD), one of the active constituents of the cannabis plant, can exert profound
+                            healing and balancing effects on all mammals. By stimulating the endocannabinoid system, CBD
+                            can help the body rebalance to homeostasis.</p>
+                        <p>Pet owners use CBD for a broad range of behavioral and medical issues, including
+                            cancer, pain, anxieties, obsessions, arthritis, seizures,
+                            neurological and digestive disorders, past traumas, social withdrawal, irritable moods, and
+                            getting along with other dogs and cats better.</p>
+                        <p>While recovering from illness or surgery, CBD can stimulate appetite and speed healing. At
+                            the end of life, CBD can minimize the pain and anxiety your pet may be experiencing.</p>
                     </div>
                     <hr>
                     <h2 class="animate__animated animate__bounce"> The Puppy Age calculator</h2>
@@ -87,68 +84,60 @@
                         <br>
                         <button onclick="calculateDogAge()" class="calculate">Calculate!</button>
                         <h3 id="solution1"></h3>
-                  
+
                     </div>
                 </div>
             </div>
         </div>
-        
-            <form name="contactForm" class="transparent" onsubmit="return validateForm()" action="#" method="get">
-                <h3>Application Form</h3>
-     
-            <div class="form-inner">
-               
-                    <label  for="username" style="color:rgb(36, 149, 184)">Full Name</label>
-                    <input type="text" name="username" placeholder="Full name*" required autocomplete="on">
-                    <div class="error" id="nameErr"></div>
-              
-               
-               
-                    <label  style="color:rgb(36, 149, 184)">Email Address</label>
-                    <input type="text" name="email" min="12" placeholder="E-Mail*" required>
-                    <div class="error" id="emailErr"></div>
+        <form name="contactForm" class="transparent" onsubmit="return validateForm()" action="#" method="get">
+            <h3>Application Form</h3>
 
-                    <label for="password"  style="color:rgb(36, 149, 184)">Password</label>
-                    <input type="password" name="password" placeholder="at least 1 number, and 1 uppercase and lowercase" required >
-                    <div class="error" id="mobileErr"></div>
-            
-        
-               
-                    <label style="color:rgb(36, 149, 184)">Mobile Number</label>
-                    <input type="text" name="mobile" placeholder="123-456-7890"  minlength="10" maxlength="18"  required >
-                    <div class="error" id="mobileErr"></div>
-               
-           
+            <div class="form-inner">
+
+                <label for="username" style="color:rgb(36, 149, 184)">Full Name</label>
                 
-                  
-                   
-                   
-                </div>
-              
-                <div class="form-inner">
-                    <input type="submit" value="Submit">
-                </div>
-                <br>
-                <br>
-           
-        </div>
-    </form>    
-            <hr> 
-            <footer>       
+                <input type="text" name="username" placeholder="Full name*" required autocomplete="on">
+                
+                <div class="error" id="nameErr"></div>
+
+                <label style="color:rgb(36, 149, 184)">Email Address</label>
+                <input type="text" name="email" min="12" placeholder="E-Mail*" required>
+                <div class="error" id="emailErr"></div>
+
+                <label for="password" style="color:rgb(36, 149, 184)">Password</label>
+                <input type="password" name="password" placeholder="at least 1 number, and 1 uppercase and lowercase"
+                    required>
+                <div class="error" id="mobileErr"></div>
+
+                <label style="color:rgb(36, 149, 184)">Mobile Number</label>
+                <input type="text" name="mobile" placeholder="123-456-7890" minlength="10" maxlength="18" required>
+                <div class="error" id="mobileErr"></div>
+            </div>
+
+            <div class="form-inner">
+                <input type="submit" value="Submit">
+            </div>
+            <br>
+            <br>
+            </div>
+        </form>
+        <hr>
+        <footer>
             <p style="text-align: center" style="font-size:12px">Stay connected:</p>
 
-            
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
             <div class="wrapper">
-               <a style="text-align: center" target="_blank" href="your_url_here"><i class="fa fa-3x fa-google-plus"></i></a>
-               <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-facebook-square"></i></a>
-               <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-twitter-square"></i></a>
-               <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-instagram"></i></a>
+                <a style="text-align: center" target="_blank" href="your_url_here"><i
+                        class="fa fa-3x fa-google-plus"></i></a>
+                <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-facebook-square"></i></a>
+                <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-twitter-square"></i></a>
+                <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-instagram"></i></a>
             </div>
-                 
-</footer>
-<script src="app.js"></script>
+
+        </footer>
+        <script src="app.js"></script>
     </body>
 
 </html>
