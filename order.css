@@ -1,19 +1,55 @@
-/* .table_price {
+body, html {
+    background-color:  rgb(230, 230, 208);
+    margin: 0;
+    font-family: 'Cooper';
+}
+
+h1 {
+    color: rgb(36, 149, 184);
+    background-color: rgb(230, 230, 208);
+    margin: auto;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+h1:hover {
+	color: red;
+}
+
+h2 {
+    color: rgb(36, 149, 184);
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h2:hover {
+	color: red;
+}
+form {
+    max-width: 580px;
+    margin: 70px auto;
+    padding: 0px 0px 30px 90px;
+    border: 3px solid red;
+   
+}
+.table_price {
     border-collapse: collapse;
-    border-left: 3px solid #F79361;
-    border-right: 3px solid #F79361;
-    border-bottom: 3px solid #F79361;
-    font-family: "Lucida Grande", sans-serif;
+    border-left: 3px solid rgb(36, 149, 184);
+    border-right: 3px solid rgb(36, 149, 184);
+    border-bottom: 3px solid rgb(36, 149, 184);
+    font-family: "Cooper";
     }
     .table_price caption {
-    background: #F79361;
+    background: red;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    box-shadow: 0 2px 4px 0 rgb(36, 149, 184, 0.466);
     color: white;
-    font-family: "Roboto Slab",serif;
+    font-family: 'Cooper';
     font-style: normal;
+    color:rgb(36, 149, 184);
     font-size: 26px;
     text-align: center;
     margin: 0;
@@ -21,66 +57,129 @@
     .table_price td, .table_price th {
     padding: 10px;
     }
-    .table_price th {
-    text-align: left;
-    font-size: 18px;
-    }
+    
     .table_price tr:nth-child(2n) {
     background: #E5E5E5;
     }
     .table_price td:last-of-type {
     text-align: center;
     }
-    .table_price a {
-    display: inline-block;
-    padding: 5px 10px;
-    background: #F79361;
-    box-shadow: 2px 2px 0 0 #a22800;
-    position: relative;
+    .label {
+    color:rgb(36, 149, 184)
     }
-    .table_price a:hover {
-    box-shadow: none;
-    top: 2px;
-    left: 2px;
-    } */
-    * Basic styles to be used with all devices and under all conditions */
-
-article, aside, figcaption, figure,
-footer, header, main, nav, section { 
-   display: block;
-}
-
-address, article, aside, blockquote, body, cite, 
-div, dl, dt, dd, em, figcaption, figure, footer, 
-h1, h2, h3, h4, h5, h6, header, html, img, 
-li, main, nav, nav a, ol, p, section, span, ul {
-   margin: 0;
-   padding: 0;
-   border: 0;
-   font-size: 100%;
-   vertical-align: baseline;
-   background: transparent;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;  
-}
-
-
-/* Set the default page element styles */
-
-body {
-   line-height: 1.2em;
-}
-
-ul, ol {
-   list-style: none;
-}
-
-nav ul {
-   list-style: none;
-   list-style-image: none;
-}
-
-nav a {
-   text-decoration: none;
-}
+    .table_price input, select  {
+        display: block;
+        padding: 0 15px;
+        margin: 10px 0 15px;
+        border-width: 0;
+        line-height: 20px;
+        border-radius: 20px;
+        color: white;
+        background: rgba(255, 255, 255, .2);
+        font-family:'Cooper', cursive;
+      }
+     
+      
+      input[type="submit"] {
+        background: rgb(36, 149, 184);
+        position: relative;
+        left: 40%;
+        transform: translate(-50%, 0);
+        border-width: 0;
+    line-height: 20px;
+    border-radius: 20px;
+    color: white;
+       font-family: 'Cooper', cursive;
+      }
+   
+/*menu*/
+    .top-menu {
+        position: relative;
+        background: rgba(34,34,34,.2);
+      }
+      
+      .menu-main li:hover .submenu {
+          display: block;
+      }
+      
+      .menu-main {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .menu-main:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .left-item {float: left;}
+      .right-item {float: right;}
+      .navbar-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      
+      .menu-main a {
+        font-family: 'Cooper', cursive;
+        text-decoration: none;
+        display: block;
+        line-height: 80px;
+        padding: 0 20px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: rgb(36, 149, 184);
+        transition: .3s linear;
+      }
+      .menu-main a:hover {background: rgba(0,0,0,.3);}
+      @media (max-width: 830px) {
+      .menu-main {
+        padding-top: 90px;
+        text-align: center;
+      }
+      
+      .navbar-logo {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+      }
+      .menu-main li {
+        float: none;
+        display: inline-block;
+      }
+      .menu-main a {
+        line-height: normal;
+        padding: 20px 15px;
+        font-size: 16px;
+      }
+      }
+      @media (max-width: 630px) {
+      .menu-main li {display: block;}
+      }
+      
+      .submenu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          z-index: 10;
+          -webkit-transition: 0.5s ease-in-out;
+          -moz-transition: 0.5s ease-in-out;
+          -o-transition: 0.5s ease-in-out;
+          transition: 0.5s ease-in-out;
+      }
+         
+        .ul li:hover .submenu {
+          display: block;
+        }
+        .submenu li a {
+          border-bottom: 1px solid rgba(255,255,255,.3);
+          color: rgb(36, 149, 184);
+        }
+      
+    

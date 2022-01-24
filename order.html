@@ -4,33 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link rel="stylesheet" type="text/css" href="order.css">
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <nav class="top-menu">
+        <ul class="menu-main">
+            <li class="left-item"><a href=""><i class="fa fa-home fa-fw"></i>Home</a></li>
+            <li class="left-item"><a href="">Learn</a>
+                <ul class="submenu">
+                    <li><a href="https://anastassiyas.github.io/Kanie-Kandies/doses.html">CBD Doses for Dogs or Cats</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="left-item"><a href="">Playtime</a>
+                <ul class="submenu">
+                    <li><a href="https://anastassiyas.github.io/Kanie-Kandies/fortune.html">Fortune teller</a></li>
+
+                </ul>
+            </li>
+            <li class="right-item"><a href="">Contact</a></li>
+            <li class="right-item"><a href="">Shop</a></li>
+            <li class="right-item"><a href="">Gallery</a></li>
+        </ul>
+        <a class="navbar-logo" href=""><img src="images/logo.png" width="80" height="78"></a>
+    </nav>
     <title>Order form for Kanie-Kandies</title>
 </head>
 <body>
-    <table class="table_price">
-      
-   
-
-  <header>
+    <header>
+        <br>
     <div id="header">
     <h1>WELCOME TO Kanie-Kandies</h1>
+    <br>
+    <br>
     <h2>Please, select an item </h2>
     </div>
   </header>
   <body>
-    
-        <form id="orderForm" name="orderForm" method="get" action="order.html">
-          
-            <table class="table_price">
-              
+    <form id="orderForm" name="orderForm" method="get" action="order.html">
+      
     <form id="form">
+        <table class="table_price">    
         <caption>Product Order</caption>
-        
+       
     <td>
     
-      <label for="products">Products</label>
+      <label for="products" style="color:rgb(36, 149, 184)">Products</label>
       
       <select name="products" id="products">
         <option value="select" selected>Select</option>  
@@ -50,7 +68,7 @@
     </select>
       </td>
     
-        <td class="rightA"><label for="qty">Qty</label>
+        <td class="rightA"><label for="qty" style="color:rgb(36, 149, 184)">Qty</label>
         
         <select name="qty" id="qty">
             <option value="1" selected>1</option>
@@ -70,35 +88,34 @@
 </tr>
 <br>
 <tr>
-    <td colspan="2" class="rightA">Subtotal</td>
+    <td colspan="2" class="rightA" style="color:rgb(36, 149, 184)">Subtotal</td>
     <td class="outcell">
        <input type="text" name="subtotal" id="subtotal" size="10" readonly />
     </td>
  </tr>
 <br>
  <tr>
-    <td colspan="2" class="rightA">Tax (5%)</td>
+    <td colspan="2" class="rightA" style="color:rgb(36, 149, 184)">Tax (5%)</td>
     <td>
        <input type="text" name="salesTax" id="salesTax" size="10" readonly />
     </td>
  </tr>
 <br>
  <tr>
-    <td colspan="2" class="rightA">TOTAL</td>
+    <td colspan="2" class="rightA" style="color:rgb(36, 149, 184)">TOTAL</td>
     <td>
        <input type="text" name="totalCost" id="totalCost" size="10" readonly />
     </td>
  </tr>
 </table>
 <br>
+
 <h2>Add items to your cart</h2>
+<br>
 <input type="submit" id="buttonAdd" value="add to cart"/>
 
 </form>
-  
- 
-      
-  
+
   <script src="order.js"></script>
 </html>
     
