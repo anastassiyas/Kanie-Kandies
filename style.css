@@ -293,7 +293,7 @@ float: none;
 .form-inner label {
   display: block;
   padding-left: 15px;
-  font-family: 'Cooper', cursive;
+  font-family: 'Cooper';
   font-size: 18px;
 }
 .form-inner input {
