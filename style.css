@@ -254,7 +254,7 @@ float: none;
   form {
    max-width: 500px;
    margin: 0px auto;
-   padding: 15px 0px 15px 15px;
+   padding: 5px 0px 15px 15px;
    border: 3px solid red;
    border-image: url("images/bones\ \(2\).png")
     533 /                    /* slice */
