@@ -49,12 +49,12 @@
     <title>Kanie-Kandies</title>
 
     <body>
-        <h1 id="message1" class="flexbox-item flexone"></h1>
+        <h1 id="message1"></h1>
         <div class="bg">
             <div class="flex-container">
-                <div id="message1" class="flexbox-item flexone"></div>
-                <div class="flexbox-item flextwo"></div>
-                <div class="flexbox-item flexthree">
+                <!-- <div id="message1" class="flexbox-item flexone"></div> -->
+                
+                <div class="flexbox-item flexone">
                     <section>
                         <img id="carousel-cbd" width="430" height="350">
                         <!--<img id = "carousel-cbd1">-->
@@ -86,46 +86,52 @@
                         <br>
                         <button onclick="calculateDogAge()" class="calculate">Calculate!</button>
                         <h3 id="solution1"></h3>
-
                     </div>
                 </div>
+                        <div class="flexbox-item flextwo">
+                            <form name="contactForm" class="transparent" onsubmit="return validateForm()" action="#" method="get">
+                                <h3>Application Form</h3>
+                    
+                                <div class="form-inner">
+                    
+                                    <label for="username" style="color:rgb(36, 149, 184)">Full Name</label>
+                                    
+                                    <input type="text" name="username" placeholder="Full name*" required autocomplete="on">
+                                    
+                                    <div class="error" id="nameErr"></div>
+                    
+                                    <label style="color:rgb(36, 149, 184)">Email Address</label>
+                                    <input type="text" name="email" min="12" placeholder="E-Mail*" required>
+                                    <div class="error" id="emailErr"></div>
+                    
+                                    <label for="password" style="color:rgb(36, 149, 184)">Password</label>
+                                    <input type="password" name="password" placeholder="at least 1 number, and 1 uppercase and lowercase"
+                                        required>
+                                    <div class="error" id="mobileErr"></div>
+                    
+                                    <label style="color:rgb(36, 149, 184)">Mobile Number</label>
+                                    <input type="text" name="mobile" placeholder="123-456-7890" minlength="10" maxlength="18" required>
+                                    <div class="error" id="mobileErr"></div>
+                                </div>
+                                
+                    
+                                <div class="form-inner">
+                                    <input type="submit" value="Submit">
+                                </div>
+                                <br>
+                                <br>
+                               
+                            </form>
+                            <br>
+                            <br>
+                            
+                            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                            <div class="elfsight-app-49d16378-8ef8-4c2d-96e6-160a5a2c2a77"></div></div>
+                   
             </div>
         </div>
-        <form name="contactForm" class="transparent" onsubmit="return validateForm()" action="#" method="get">
-            <h3>Application Form</h3>
-
-            <div class="form-inner">
-
-                <label for="username" style="color:rgb(36, 149, 184)">Full Name</label>
-                
-                <input type="text" name="username" placeholder="Full name*" required autocomplete="on">
-                
-                <div class="error" id="nameErr"></div>
-
-                <label style="color:rgb(36, 149, 184)">Email Address</label>
-                <input type="text" name="email" min="12" placeholder="E-Mail*" required>
-                <div class="error" id="emailErr"></div>
-
-                <label for="password" style="color:rgb(36, 149, 184)">Password</label>
-                <input type="password" name="password" placeholder="at least 1 number, and 1 uppercase and lowercase"
-                    required>
-                <div class="error" id="mobileErr"></div>
-
-                <label style="color:rgb(36, 149, 184)">Mobile Number</label>
-                <input type="text" name="mobile" placeholder="123-456-7890" minlength="10" maxlength="18" required>
-                <div class="error" id="mobileErr"></div>
-            </div>
-
-            <div class="form-inner">
-                <input type="submit" value="Submit">
-            </div>
-            <br>
-            <br>
-            </div>
-        </form>
-        <br>
-        <br>
-        <hr>
+        </div>
+        
         <footer>
             <p style="text-align: center" style="font-size:12px">Stay connected:</p>
 

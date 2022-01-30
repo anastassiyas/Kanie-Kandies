@@ -4,17 +4,16 @@ body, html {
     font-family: 'Cooper';
 }
 .bg {
-/*The image used*/
-background-image: url("images/puppy 2.jpg");
-background-size: 100% auto;
-
-/*Full height*/
-height: 100%;
-/*center and scale the image*/
-background-position: center;
-margin: 0;
-background-size: cover;
+  background-image: url("images/puppy 2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 1400px auto;
+  background-position: center top;
+  padding: 50px 90px 120px 50px;
 }
+
+
 
 h1 {
     color: red;
@@ -152,7 +151,7 @@ p {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-row-gap: 30px;
+row-gap: 10px;
 text-align: center;
 }
 
@@ -160,7 +159,7 @@ text-align: center;
 margin: 54px;
 
 }
-.flexone {
+.flexthree {
 flex-grow: 2;
 }
 
@@ -168,7 +167,7 @@ flex-grow: 2;
 width: none;
 }
 
-.flexthree {
+.flexone {
 flex: 1;
 background-color: rgba(255, 235, 205, 0.103);
 margin: 100px;
