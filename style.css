@@ -53,7 +53,7 @@ h3:hover {
 } 
 
 p {
-  color: rgb(36, 149, 184);
+  color:rgb(79 64 19 / 82%);
   margin-left: 15px;
   text-align: center;
 }
@@ -160,15 +160,24 @@ margin: 54px;
 
 }
 .flexthree {
-flex-grow: 2;
+flex: 0;
 }
 
 .flextwo {
-width: none;
+
+flex: 1;
+background-color: rgba(255, 235, 205, 0.103);
+margin: 100px;
+border: 20px solid blanchedalmond;
+border-image: url("images/bones\ \(2\).png")
+    533 /                    /* slice */
+    48px 48px 48px 48px /    /* width */
+    24px 24px 24px 24px       /* outset */
+    round;                  /* repeat */
 }
 
 .flexone {
-flex: 1;
+flex: 12;
 background-color: rgba(255, 235, 205, 0.103);
 margin: 100px;
 border: 20px solid blanchedalmond;
@@ -249,17 +258,13 @@ float: none;
 /*form*/
  * {
   box-sizing: border-box;
+  border-radius: 10px;
  }
   form {
    max-width: 500px;
    margin: 0px auto;
-   padding: 5px 0px 15px 15px;
-   border: 3px solid red;
-   border-image: url("images/bones\ \(2\).png")
-    533 /                    /* slice */
-    48px 48px 48px 48px /    /* width */
-    24px 24px 24px 24px       /* outset */
-    round;                  /* repeat */
+   
+  
 }
 
 .transparent {
@@ -268,6 +273,7 @@ float: none;
   padding: 0px 30px;
   margin: 50px auto 0;
   background-image: url(images/Treating.jpg);
+  border-radius: 10px;
   background-size: cover;
 }
 .transparent:before {
