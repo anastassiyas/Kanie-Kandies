@@ -157,6 +157,25 @@ function validateForm() {
         // Display input data in a dialog box before submitting the form
         alert(dataPreview);
     }
+//=================fetching movie api=======================
+const apiURL ="//www.omdbapi.com/?apikey=6c3f9ab7&i=tt12245584";
+
+fetch (apiURL)
+.then((response) => response.json())
+.then((movieInfo)=> {
+    console.log(movieInfo);
+
+document.getElementById("place").innerHTML=movieInfo.Title;
+document.getElementById("year").innerHTML=movieInfo.Year;
+document.getElementById("released").innerHTML=movieInfo.Released;
+document.getElementById("plot").innerHTML=movieInfo.Plot;
+document.getElementById("genre").innerHTML=movieInfo.Genre;
+document.getElementById("mins").innerHTML=movieInfo.Runtime;
+
+const img=movieInfo.Poster;
+document.getElementById("poster").src=iconCodeTwo;
+}
+);
 
 
 
