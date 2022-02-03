@@ -165,15 +165,13 @@ fetch (apiURL)
 .then((movieInfo)=> {
     console.log(movieInfo);
 
-document.getElementById("place").innerHTML=movieInfo.Title;
+document.getElementById("title").innerHTML=movieInfo.Title;
 document.getElementById("year").innerHTML=movieInfo.Year;
-document.getElementById("released").innerHTML=movieInfo.Released;
-document.getElementById("plot").innerHTML=movieInfo.Plot;
+document.getElementById("poster").innerHTML=movieInfo.Poster;
 document.getElementById("genre").innerHTML=movieInfo.Genre;
 document.getElementById("mins").innerHTML=movieInfo.Runtime;
 
-const img=movieInfo.Poster;
-document.getElementById("poster").src=iconCodeTwo;
+
 }
 );
 
